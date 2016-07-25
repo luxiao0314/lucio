@@ -1,2 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<merger version="3"><dataSet config="main"><source path="/Users/luthor/Downloads/github/Knowledge-master/umeng/assets"/><source path="/Users/luthor/Downloads/github/Knowledge-master/umeng/build/generated/assets/shaders/debug"/></dataSet><dataSet config="debug"><source path="/Users/luthor/Downloads/github/Knowledge-master/umeng/build-types/debug/assets"/></dataSet></merger>
