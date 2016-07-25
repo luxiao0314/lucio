@@ -16,7 +16,7 @@ public class App extends Application {
     public void onCreate() {
         super.onCreate();
         mApp = this;
-        
+
         SpUtil.init(this);
     }
 
