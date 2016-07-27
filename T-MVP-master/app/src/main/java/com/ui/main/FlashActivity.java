@@ -6,7 +6,9 @@ import android.view.animation.AlphaAnimation;
 import android.widget.FrameLayout;
 
 import com.base.BaseActivity;
+import com.base.Constants;
 import com.base.util.AnimationUtil;
+import com.base.util.SpUtil;
 import com.base.util.StatusBarUtil;
 import com.ui.home.HomeActivity;
 import com.view.widget.FireView;
@@ -43,7 +45,10 @@ public class FlashActivity extends BaseActivity {
         view.startAnimation(anim);
         //动画结束之后跳转到主页面
         AnimationUtil.setAnimationListener(anim, () -> {
+
+            if (SpUtil.getBoolean(Constants.IS_FIRST_COME,true))
             startActivity(new Intent(mContext, HomeActivity.class));
+            SpUtil.putBoolean(Constants.IS_FIRST_COME,false);
             finish();
         });
     }

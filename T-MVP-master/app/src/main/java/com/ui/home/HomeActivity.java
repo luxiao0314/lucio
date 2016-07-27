@@ -43,6 +43,7 @@ import java.util.List;
 
 import butterknife.Bind;
 import rx.Observable;
+import rx.Subscriber;
 
 public class HomeActivity extends BaseActivity<HomePresenter, HomeModel> implements HomeContract.View {
 
@@ -133,7 +134,23 @@ public class HomeActivity extends BaseActivity<HomePresenter, HomeModel> impleme
     @Override
     public void showTabList(String[] mTabs) {
         List<Fragment> fragments = new ArrayList<>();
-        Observable.from(mTabs).subscribe(tab -> fragments.add(BaseListFragment.newInstance(ArticleItemVH.class, tab)));
+        Observable.from(mTabs).subscribe(new Subscriber<String>() {
+            @Override
+            public void onCompleted() {
+
+            }
+
+            @Override
+            public void onError(Throwable e) {
+
+            }
+
+            @Override
+            public void onNext(String tab) {
+                fragments.add(BaseListFragment.newInstance(ArticleItemVH.class, tab));
+//                fragments.set(1,new RetroFragment());
+            }
+        });
         viewpager.setAdapter(new FragmentAdapter(getSupportFragmentManager(), fragments, Arrays.asList(mTabs)));
         tabs.setupWithViewPager(viewpager);
         tabs.setTabsFromPagerAdapter(viewpager.getAdapter());
