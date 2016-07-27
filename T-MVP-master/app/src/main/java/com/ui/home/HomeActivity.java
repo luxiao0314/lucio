@@ -75,10 +75,16 @@ public class HomeActivity extends BaseActivity<HomePresenter, HomeModel> impleme
 
     @Override
     public void onBackPressed() {
+        //如果侧边栏是打开的,就关闭
         if (dlMainDrawer.isDrawerOpen(Gravity.LEFT)) dlMainDrawer.closeDrawers();
         else super.onBackPressed();
     }
 
+    /**
+     * 获取侧边栏条目
+     * @param item
+     * @return
+     */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         if (item.getItemId() == R.id.action_settings)
@@ -87,7 +93,6 @@ public class HomeActivity extends BaseActivity<HomePresenter, HomeModel> impleme
             dlMainDrawer.openDrawer(GravityCompat.START);
         return super.onOptionsItemSelected(item);
     }
-
 
     @Override
     public void initView() {

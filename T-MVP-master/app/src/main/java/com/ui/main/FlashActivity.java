@@ -2,22 +2,14 @@ package com.ui.main;
 
 import android.content.Intent;
 import android.view.View;
-import android.view.animation.AccelerateInterpolator;
 import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
-import android.view.animation.Interpolator;
-import android.view.animation.ScaleAnimation;
 import android.widget.FrameLayout;
-import android.widget.ImageView;
 
 import com.base.BaseActivity;
 import com.base.util.AnimationUtil;
 import com.base.util.StatusBarUtil;
 import com.ui.home.HomeActivity;
 import com.view.widget.FireView;
-
-import java.util.Timer;
-import java.util.TimerTask;
 
 import butterknife.Bind;
 
@@ -49,6 +41,7 @@ public class FlashActivity extends BaseActivity {
         AlphaAnimation anim = new AlphaAnimation(0.8f, 0.1f);
         anim.setDuration(5000);
         view.startAnimation(anim);
+        //动画结束之后跳转到主页面
         AnimationUtil.setAnimationListener(anim, () -> {
             startActivity(new Intent(mContext, HomeActivity.class));
             finish();

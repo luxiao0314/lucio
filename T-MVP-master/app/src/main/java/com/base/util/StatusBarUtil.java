@@ -11,7 +11,12 @@ import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
-
+/**
+* 沉浸式状态栏工具类
+* 
+* @author LUXIAO418@pingan.com.cn
+* @date created at 16/7/27 22:31
+*/
 public class StatusBarUtil {
 
     public static final int DEFAULT_STATUS_BAR_ALPHA = 112;

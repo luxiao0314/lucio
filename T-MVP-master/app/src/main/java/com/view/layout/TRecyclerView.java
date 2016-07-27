@@ -81,8 +81,8 @@ public class TRecyclerView<T extends BaseEntity.ListBean> extends LinearLayout {
 
     private void initView(Context context) {
         swiperefresh.setColorSchemeResources(android.R.color.holo_blue_bright);
-        swiperefresh.setEnabled(isRefreshable);
-        swiperefresh.setOnRefreshListener(() -> reFetch());
+        swiperefresh.setEnabled(isRefreshable); //设置可下拉刷新
+        swiperefresh.setOnRefreshListener(() -> reFetch()); //设置刷新的监听
         recyclerview.setHasFixedSize(true);
         mLayoutManager = new LinearLayoutManager(context);
         recyclerview.setLayoutManager(mLayoutManager);
@@ -98,6 +98,7 @@ public class TRecyclerView<T extends BaseEntity.ListBean> extends LinearLayout {
                         && newState == RecyclerView.SCROLL_STATE_IDLE
                         && lastVisibleItem + 1 == recyclerview.getAdapter()
                         .getItemCount() && mCommAdapter.isHasMore)
+                    //加载更多
                     fetch();
             }
 

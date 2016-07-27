@@ -23,7 +23,7 @@ public class HomePresenter extends HomeContract.Presenter {
 
     @Override
     public void onStart() {
-        getTabList();
+        getTabList();   //获取tag列表
         getUserInfo();
         mRxManager.on(C.EVENT_LOGIN, arg -> mView.initUserInfo((_User) arg));
     }
