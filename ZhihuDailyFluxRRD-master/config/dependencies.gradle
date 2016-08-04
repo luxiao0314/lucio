@@ -1,0 +1,69 @@
+allprojects {
+    repositories {
+        jcenter()
+        maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
+    }
+}
+
+ext {
+    //Android
+    androidBuildTools = "23.0.3"
+    androidMinSdk = 21
+    androidTargetSdk = 23
+    androidCompileSdk = 23
+    androidSupport = "23.2.1"
+
+    //Libraries
+    dagger = '2.2'
+    picasso = "2.5.2"
+    butterKnife = '7.0.1'
+    rxJava = '1.1.3'
+    rxAndroid = '1.1.0'
+    rxLifecycle = '0.5.0'
+    rxBinding = '0.4.0'
+    javaxAnnotation = '10.0-b28'
+    retrofit = "2.0.2"
+    okHttp = "3.2.0"
+    jotaTime = "2.8.2"
+    imageSlider = "1.1.5@aar"
+    nineOld = "2.4.0"
+    gson = "2.6.2"
+
+    circleImage = "2.0.0"
+
+    //Test
+    jUnit = '4.12'
+
+    libs = [
+            picasso             : "com.squareup.picasso:picasso:${picasso}",
+            daggerCompiler      : "com.google.dagger:dagger-compiler:${dagger}",
+            dagger              : "com.google.dagger:dagger:${dagger}",
+            butterKnife         : "com.jakewharton:butterknife:${butterKnife}",
+            supportV4           : "com.android.support:support-v4:${androidSupport}",
+            appcompat           : "com.android.support:appcompat-v7:${androidSupport}",
+            recyclerView        : "com.android.support:recyclerview-v7:${androidSupport}",
+            cardView            : "com.android.support:cardview-v7:${androidSupport}",
+            supportDesign       : "com.android.support:design:${androidSupport}",
+            supportAnnotation   : "com.android.support:support-annotations:${androidSupport}",
+            rxJava              : "io.reactivex:rxjava:${rxJava}",
+            rxAndroid           : "io.reactivex:rxandroid:${rxAndroid}",
+            rxLifecycle         : "com.trello:rxlifecycle:${rxLifecycle}",
+            rxComponent         : "com.trello:rxlifecycle-components:${rxLifecycle}",
+            rxBinding           : "com.jakewharton.rxbinding:rxbinding:${rxBinding}",
+            javaxAnnotation     : "org.glassfish:javax.annotation:${javaxAnnotation}",
+            retrofit            : "com.squareup.retrofit2:retrofit:${retrofit}",
+            retrofitWithGson    : "com.squareup.retrofit2:converter-gson:${retrofit}",
+            retrofitWithRxJava  : "com.squareup.retrofit2:adapter-rxjava:${retrofit}",
+            okHttpLogInterceptor: "com.squareup.okhttp3:logging-interceptor:${okHttp}",
+            jodaTime            : "joda-time:joda-time:${jotaTime}",
+            imageSlider         : "com.daimajia.slider:library:${imageSlider}",
+            nineOld             : "com.nineoldandroids:library:${nineOld}",
+            gson                : "com.google.code.gson:gson:${gson}",
+            circleImage         : "de.hdodenhof:circleimageview:${circleImage}"
+    ]
+
+
+    test = [
+            junit: "junit:junit:${jUnit}"
+    ]
+}
