@@ -2,7 +2,7 @@ package com.ui.article;
 
 
 import com.api.Api;
-import com.base.util.helper.RxSchedulers;
+import com.util.helper.RxSchedulers;
 import com.data.CreatedResult;
 import com.data.Pointer;
 import com.data.entity.Comment;

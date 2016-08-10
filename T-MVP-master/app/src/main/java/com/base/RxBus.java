@@ -7,7 +7,7 @@ import java.util.concurrent.ConcurrentHashMap;
 
 import android.support.annotation.NonNull;
 
-import com.base.util.LogUtil;
+import com.util.LogUtil;
 
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;

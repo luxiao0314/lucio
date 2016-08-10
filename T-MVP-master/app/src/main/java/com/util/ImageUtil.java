@@ -1,4 +1,4 @@
-package com.base.util;
+package com.util;
 
 import android.content.ContentResolver;
 import android.content.Context;
@@ -11,7 +11,7 @@ import android.provider.MediaStore;
 import android.util.Log;
 import android.widget.ImageView;
 
-import com.base.util.helper.GlideCircleTransform;
+import com.util.helper.GlideCircleTransform;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.ui.main.R;

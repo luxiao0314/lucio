@@ -1,17 +1,17 @@
-package com.base.util;
+package com.util;
 
 
 import android.content.Context;
 import android.text.TextUtils;
 import android.widget.Toast;
 
-import com.App;
+import com.BaseApplication;
 
 /**
  * ToastUtil
  */
 public class ToastUtil {
-    private static Context context = App.getAppContext();
+    private static Context context = BaseApplication.getAppContext();
     private static Toast mToast;
 
     public static void show(int resId) {

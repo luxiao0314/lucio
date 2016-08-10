@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 import com.C;
 import com.base.BaseViewHolder;
-import com.base.util.ImageUtil;
+import com.util.ImageUtil;
 import com.data.entity.Image;
 import com.ui.article.ArticleActivity;
 import com.ui.main.R;

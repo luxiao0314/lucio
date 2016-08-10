@@ -2,9 +2,9 @@ package com.data.entity;
 
 import com.C;
 import com.api.Api;
-import com.base.util.ApiUtil;
+import com.util.ApiUtil;
 import com.base.BaseEntity;
-import com.base.util.helper.RxSchedulers;
+import com.util.helper.RxSchedulers;
 import com.data.Data;
 
 import rx.Observable;

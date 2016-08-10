@@ -1,11 +1,7 @@
 package com.ui.user;
 
-import android.content.Intent;
-import android.os.SystemClock;
-
 import com.C;
-import com.base.util.ImageUtil;
-import com.base.util.SpUtil;
+import com.util.SpUtil;
 import com.data.entity._User;
 
 import java.io.File;

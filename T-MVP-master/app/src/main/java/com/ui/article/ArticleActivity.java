@@ -15,11 +15,10 @@ import android.widget.EditText;
 import android.widget.ImageView;
 
 import com.C;
-import com.base.BaseActivity;
-import com.base.util.ImageUtil;
-import com.base.util.SpUtil;
-import com.base.util.ToastUtil;
-import com.base.util.ViewUtil;
+import com.base.ex.ExBaseActivity;
+import com.util.ImageUtil;
+import com.util.SpUtil;
+import com.util.ViewUtil;
 import com.data.Pointer;
 import com.data.entity.Image;
 import com.google.gson.Gson;
@@ -31,7 +30,7 @@ import com.view.viewholder.CommentItemVH;
 
 import butterknife.Bind;
 
-public class ArticleActivity extends BaseActivity<ArticlePresenter, ArticleModel> implements ArticleContract.View {
+public class ArticleActivity extends ExBaseActivity<ArticlePresenter, ArticleModel> implements ArticleContract.View {
     public static final String TRANSLATE_VIEW = "share_img";
     @Bind(R.id.image)
     ImageView image;

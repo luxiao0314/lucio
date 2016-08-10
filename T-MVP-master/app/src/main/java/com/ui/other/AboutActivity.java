@@ -1,11 +1,12 @@
-package com.ui.main;
+package com.ui.other;
 
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 
-import com.base.BaseActivity;
+import com.base.ex.ExBaseActivity;
+import com.ui.main.R;
 import com.view.layout.TRecyclerView;
 import com.view.viewholder.UserItemVH;
 
@@ -14,7 +15,7 @@ import butterknife.Bind;
 /**
  * 简单页面无需mvp,该咋写还是咋写
  */
-public class AboutActivity extends BaseActivity {
+public class AboutActivity extends ExBaseActivity {
 
     @Bind(R.id.fab)
     FloatingActionButton fab;

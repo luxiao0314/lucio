@@ -1,4 +1,4 @@
-package com.base.util;
+package com.util;
 
 import java.lang.reflect.ParameterizedType;
 

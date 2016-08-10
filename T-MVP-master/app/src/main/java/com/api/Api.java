@@ -3,8 +3,8 @@ package com.api;
 
 import android.util.Log;
 
-import com.App;
-import com.base.util.NetWorkUtil;
+import com.BaseApplication;
+import com.util.NetWorkUtil;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
@@ -49,7 +49,7 @@ public class Api {
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
 
-        File cacheFile = new File(App.getAppContext().getCacheDir(), "cache");
+        File cacheFile = new File(BaseApplication.getAppContext().getCacheDir(), "cache");
         Cache cache = new Cache(cacheFile, 1024 * 1024 * 100); //100Mb
 
         OkHttpClient okHttpClient = new OkHttpClient.Builder()
@@ -89,7 +89,7 @@ public class Api {
         @Override
         public Response intercept(Chain chain) throws IOException {
             Request request = chain.request();
-            if (!NetWorkUtil.isNetConnected(App.getAppContext())) {
+            if (!NetWorkUtil.isNetConnected(BaseApplication.getAppContext())) {
                 request = request.newBuilder()
                         .cacheControl(CacheControl.FORCE_CACHE)
                         .build();
@@ -97,7 +97,7 @@ public class Api {
             }
 
             Response originalResponse = chain.proceed(request);
-            if (NetWorkUtil.isNetConnected(App.getAppContext())) {
+            if (NetWorkUtil.isNetConnected(BaseApplication.getAppContext())) {
                 //有网的时候读接口上的@Headers里的配置，你可以在这里进行统一的设置
                 String cacheControl = request.cacheControl().toString();
                 return originalResponse.newBuilder()

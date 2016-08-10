@@ -1,11 +1,6 @@
 package com.ui.user;
 
-import android.content.ContentResolver;
 import android.content.Intent;
-import android.database.Cursor;
-import android.net.Uri;
-import android.os.SystemClock;
-import android.provider.MediaStore;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.view.ViewCompat;
@@ -16,10 +11,10 @@ import android.view.MenuItem;
 import android.widget.ImageView;
 
 import com.C;
-import com.base.BaseActivity;
-import com.base.util.ImageUtil;
-import com.base.util.SpUtil;
-import com.base.util.ToastUtil;
+import com.base.ex.ExBaseActivity;
+import com.util.ImageUtil;
+import com.util.SpUtil;
+import com.util.ToastUtil;
 import com.data.Pointer;
 import com.data.entity._User;
 import com.google.gson.Gson;
@@ -31,7 +26,7 @@ import java.io.File;
 
 import butterknife.Bind;
 
-public class UserActivity extends BaseActivity<UserPresenter, UserModel> implements UserContract.View {
+public class UserActivity extends ExBaseActivity<UserPresenter, UserModel> implements UserContract.View {
     public static final String TRANSLATE_VIEW = "share_img";
     private static final int IMAGE_REQUEST_CODE = 100;
     @Bind(R.id.image)

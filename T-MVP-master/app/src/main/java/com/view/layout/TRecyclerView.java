@@ -17,7 +17,7 @@ import com.C;
 import com.base.BaseEntity;
 import com.base.BaseViewHolder;
 import com.base.RxManager;
-import com.base.util.LogUtil;
+import com.util.LogUtil;
 import com.data.Data;
 import com.ui.main.R;
 import com.view.viewholder.CommFooterVH;

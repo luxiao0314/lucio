@@ -1,26 +1,24 @@
 package com.ui.home;
 
-import com.base.BaseModel;
-import com.base.BasePresenter;
-import com.base.BaseView;
+import com.base.ex.ExBaseContract;
 import com.data.entity._User;
 
 /**
  * Created by baixiaokang on 16/4/22.
  */
 public interface HomeContract {
-    interface Model extends BaseModel {
+    interface Model extends ExBaseContract.ModelImpl {
         String[] getTabs();
     }
 
 
-    interface View extends BaseView {
+    interface View extends ExBaseContract.ViewImpl {
         void showTabList(String[] mTabs);
 
         void initUserInfo(_User user);
     }
 
-    abstract class Presenter extends BasePresenter<Model, View> {
+    abstract class Presenter extends ExBaseContract.PresenterImpl<View, Model> {
         public abstract void getTabList();
 
         public abstract void getUserInfo();

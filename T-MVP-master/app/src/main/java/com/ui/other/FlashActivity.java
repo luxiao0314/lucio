@@ -1,16 +1,17 @@
-package com.ui.main;
+package com.ui.other;
 
 import android.content.Intent;
 import android.view.View;
 import android.view.animation.AlphaAnimation;
 import android.widget.FrameLayout;
 
-import com.base.BaseActivity;
+import com.base.ex.ExBaseActivity;
 import com.base.Constants;
-import com.base.util.AnimationUtil;
-import com.base.util.SpUtil;
-import com.base.util.StatusBarUtil;
+import com.util.AnimationUtil;
+import com.util.SpUtil;
+import com.util.StatusBarUtil;
 import com.ui.home.HomeActivity;
+import com.ui.main.R;
 import com.view.widget.FireView;
 
 import butterknife.Bind;
@@ -18,7 +19,7 @@ import butterknife.Bind;
 /**
  * Created by baixiaokang on 16/4/28.
  */
-public class FlashActivity extends BaseActivity {
+public class FlashActivity extends ExBaseActivity {
 
     @Bind(R.id.fl_main)
     FrameLayout fl_main;

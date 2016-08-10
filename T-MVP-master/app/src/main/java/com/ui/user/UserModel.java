@@ -1,7 +1,7 @@
 package com.ui.user;
 
 import com.api.Api;
-import com.base.util.helper.RxSchedulers;
+import com.util.helper.RxSchedulers;
 import com.data.CreatedResult;
 import com.data.entity._User;
 

@@ -4,9 +4,7 @@ import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
-import com.base.util.ViewUtil;
-
-import butterknife.ButterKnife;
+import com.util.ViewUtil;
 
 public abstract class BaseViewHolder<T> extends RecyclerView.ViewHolder {
     public Context mContext;

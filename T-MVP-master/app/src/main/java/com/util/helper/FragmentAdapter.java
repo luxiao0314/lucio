@@ -1,4 +1,4 @@
-package com.base.util.helper;
+package com.util.helper;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

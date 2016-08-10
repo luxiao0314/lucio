@@ -1,12 +1,8 @@
-package com.base.util;
+package com.util;
 
 import android.util.Log;
 
 import com.ui.main.BuildConfig;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 /**
  * Created by baixiaokang on 16/4/28.

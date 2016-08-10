@@ -22,18 +22,18 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.C;
-import com.base.BaseActivity;
+import com.base.ex.ExBaseActivity;
 import com.base.BaseListFragment;
-import com.base.util.ImageUtil;
-import com.base.util.SpUtil;
-import com.base.util.ToastUtil;
-import com.base.util.helper.FragmentAdapter;
+import com.util.ImageUtil;
+import com.util.SpUtil;
+import com.util.ToastUtil;
+import com.util.helper.FragmentAdapter;
 import com.data.entity._User;
 import com.ui.article.ArticleActivity;
 import com.ui.login.LoginActivity;
-import com.ui.main.AboutActivity;
+import com.ui.other.AboutActivity;
 import com.ui.main.R;
-import com.ui.main.SettingsActivity;
+import com.ui.other.SettingsActivity;
 import com.ui.user.UserActivity;
 import com.view.viewholder.ArticleItemVH;
 
@@ -43,9 +43,8 @@ import java.util.List;
 
 import butterknife.Bind;
 import rx.Observable;
-import rx.Subscriber;
 
-public class HomeActivity extends BaseActivity<HomePresenter, HomeModel> implements HomeContract.View {
+public class HomeActivity extends ExBaseActivity<HomePresenter, HomeModel> implements HomeContract.View {
 
     @Bind(R.id.toolbar)
     Toolbar toolbar;
@@ -64,7 +63,7 @@ public class HomeActivity extends BaseActivity<HomePresenter, HomeModel> impleme
 
     @Override
     public int getLayoutId() {
-        return R.layout.activity_main;
+        return R.layout.activity_home;
     }
 
 
@@ -134,23 +133,8 @@ public class HomeActivity extends BaseActivity<HomePresenter, HomeModel> impleme
     @Override
     public void showTabList(String[] mTabs) {
         List<Fragment> fragments = new ArrayList<>();
-        Observable.from(mTabs).subscribe(new Subscriber<String>() {
-            @Override
-            public void onCompleted() {
-
-            }
-
-            @Override
-            public void onError(Throwable e) {
-
-            }
-
-            @Override
-            public void onNext(String tab) {
-                fragments.add(BaseListFragment.newInstance(ArticleItemVH.class, tab));
-//                fragments.set(1,new RetroFragment());
-            }
-        });
+        //初次使用lambda表达式,想fragments集合中添加fragment
+        Observable.from(mTabs).subscribe(tab -> fragments.add(BaseListFragment.newInstance(ArticleItemVH.class, tab)));
         viewpager.setAdapter(new FragmentAdapter(getSupportFragmentManager(), fragments, Arrays.asList(mTabs)));
         tabs.setupWithViewPager(viewpager);
         tabs.setTabsFromPagerAdapter(viewpager.getAdapter());

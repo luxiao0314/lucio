@@ -1,7 +1,7 @@
 package com.ui.article;
 
-import com.base.util.ApiUtil;
-import com.base.util.SpUtil;
+import com.util.ApiUtil;
+import com.util.SpUtil;
 import com.data.entity.Image;
 import com.data.entity._User;
 

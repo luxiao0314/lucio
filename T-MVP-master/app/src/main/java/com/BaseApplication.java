@@ -4,13 +4,13 @@ import android.app.Application;
 import android.content.Context;
 import android.content.res.Resources;
 
-import com.base.util.SpUtil;
+import com.util.SpUtil;
 
 /**
  * Created by baixiaokang on 16/4/23.
  */
-public class App extends Application {
-    private static App mApp;
+public class BaseApplication extends Application {
+    private static BaseApplication mApp;
 
     @Override
     public void onCreate() {

@@ -1,7 +1,7 @@
 package com.ui.login;
 
 import com.C;
-import com.base.util.SpUtil;
+import com.util.SpUtil;
 
 /**
  * Created by baixiaokang on 16/4/29.

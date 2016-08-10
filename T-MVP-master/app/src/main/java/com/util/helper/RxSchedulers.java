@@ -1,4 +1,4 @@
-package com.base.util.helper;
+package com.util.helper;
 
 import rx.Observable;
 import rx.android.schedulers.AndroidSchedulers;

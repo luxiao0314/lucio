@@ -3,9 +3,7 @@ package com.data.entity;
 import com.C;
 import com.api.Api;
 import com.base.BaseEntity;
-import com.base.util.helper.RxSchedulers;
-
-import java.util.Map;
+import com.util.helper.RxSchedulers;
 
 import rx.Observable;
 

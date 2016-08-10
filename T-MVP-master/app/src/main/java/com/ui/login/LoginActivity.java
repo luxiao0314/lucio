@@ -7,7 +7,7 @@ import android.support.design.widget.TextInputLayout;
 import android.text.TextUtils;
 import android.widget.TextView;
 
-import com.base.BaseActivity;
+import com.base.ex.ExBaseActivity;
 import com.ui.home.HomeActivity;
 import com.ui.login.LoginContract.View;
 import com.ui.main.R;
@@ -17,7 +17,7 @@ import butterknife.Bind;
 /**
  * Created by Administrator on 2016/1/14.
  */
-public class LoginActivity extends BaseActivity<LoginPresenter, LoginModel> implements View {
+public class LoginActivity extends ExBaseActivity<LoginPresenter, LoginModel> implements View {
     @Bind(R.id.fab)
     FloatingActionButton fab;
     @Bind(R.id.tl_name)

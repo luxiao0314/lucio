@@ -6,7 +6,7 @@ import android.content.IntentFilter;
 import android.support.v4.content.LocalBroadcastManager;
 import android.text.TextUtils;
 
-import com.App;
+import com.BaseApplication;
 
 /**
  * localbroadcast的封装
@@ -21,7 +21,7 @@ public class LocalBroadcast {
 
     private synchronized static void checkLocalBroadcastManagerInstance() {
         if (null == sLocalBroadcastManager) {
-            sLocalBroadcastManager = LocalBroadcastManager.getInstance(App.getAppContext());
+            sLocalBroadcastManager = LocalBroadcastManager.getInstance(BaseApplication.getAppContext());
         }
     }
 
