@@ -1,4 +1,4 @@
-package com.ui.other;
+package com.ui.view;
 
 import android.content.Intent;
 import android.view.View;
@@ -10,7 +10,6 @@ import com.base.Constants;
 import com.util.AnimationUtil;
 import com.util.SpUtil;
 import com.util.StatusBarUtil;
-import com.ui.home.HomeActivity;
 import com.ui.main.R;
 import com.view.widget.FireView;
 

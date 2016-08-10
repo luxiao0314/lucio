@@ -12,9 +12,9 @@ import com.C;
 import com.base.BaseViewHolder;
 import com.util.ImageUtil;
 import com.data.entity.CommentInfo;
-import com.ui.article.ArticleActivity;
+import com.ui.view.ArticleActivity;
 import com.ui.main.R;
-import com.ui.user.UserActivity;
+import com.ui.view.UserActivity;
 
 /**
  * Created by baixiaokang on 16/5/4.

@@ -1,4 +1,4 @@
-package com.ui.article;
+package com.ui.view;
 
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
@@ -16,13 +16,15 @@ import android.widget.ImageView;
 
 import com.C;
 import com.base.ex.ExBaseActivity;
+import com.ui.contract.ArticleContract;
+import com.ui.model.ArticleModel;
+import com.ui.presenter.ArticlePresenter;
 import com.util.ImageUtil;
 import com.util.SpUtil;
 import com.util.ViewUtil;
 import com.data.Pointer;
 import com.data.entity.Image;
 import com.google.gson.Gson;
-import com.ui.login.LoginActivity;
 import com.ui.main.R;
 import com.view.layout.TRecyclerView;
 import com.view.viewholder.ArticleHeaderVH;

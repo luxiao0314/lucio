@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     app:contentScrim="?attr/colorPrimary"
-    tools:context="com.ui.article.ArticleActivity">
+    tools:context="com.ui.view.ArticleActivity">
 
     <android.support.design.widget.CoordinatorLayout
         android:id="@+id/main_content"

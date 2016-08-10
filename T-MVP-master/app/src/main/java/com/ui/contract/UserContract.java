@@ -1,4 +1,4 @@
-package com.ui.user;
+package com.ui.contract;
 
 import com.base.ex.ExBaseContract;
 import com.data.CreatedResult;

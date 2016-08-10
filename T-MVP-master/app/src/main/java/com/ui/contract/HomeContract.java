@@ -1,4 +1,4 @@
-package com.ui.home;
+package com.ui.contract;
 
 import com.base.ex.ExBaseContract;
 import com.data.entity._User;

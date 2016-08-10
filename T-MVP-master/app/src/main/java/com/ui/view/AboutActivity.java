@@ -1,4 +1,4 @@
-package com.ui.other;
+package com.ui.view;
 
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.ActionBar;

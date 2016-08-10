@@ -6,7 +6,7 @@ import com.data.entity.Comment;
 import com.data.entity.CommentInfo;
 import com.data.entity.Image;
 import com.data.entity._User;
-import com.ui.user.UserModel;
+import com.ui.model.UserModel;
 
 import okhttp3.RequestBody;
 import retrofit2.http.Body;

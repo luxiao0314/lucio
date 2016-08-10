@@ -1,4 +1,4 @@
-package com.ui.home;
+package com.ui.view;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -24,17 +24,15 @@ import android.widget.TextView;
 import com.C;
 import com.base.ex.ExBaseActivity;
 import com.base.BaseListFragment;
+import com.ui.contract.HomeContract;
+import com.ui.model.HomeModel;
+import com.ui.presenter.HomePresenter;
 import com.util.ImageUtil;
 import com.util.SpUtil;
 import com.util.ToastUtil;
 import com.util.helper.FragmentAdapter;
 import com.data.entity._User;
-import com.ui.article.ArticleActivity;
-import com.ui.login.LoginActivity;
-import com.ui.other.AboutActivity;
 import com.ui.main.R;
-import com.ui.other.SettingsActivity;
-import com.ui.user.UserActivity;
 import com.view.viewholder.ArticleItemVH;
 
 import java.util.ArrayList;

@@ -1,5 +1,6 @@
-package com.ui.article;
+package com.ui.presenter;
 
+import com.ui.contract.ArticleContract;
 import com.util.ApiUtil;
 import com.util.SpUtil;
 import com.data.entity.Image;

@@ -1,4 +1,6 @@
-package com.ui.home;
+package com.ui.model;
+
+import com.ui.contract.HomeContract;
 
 /**
  * Created by baixiaokang on 16/5/2.

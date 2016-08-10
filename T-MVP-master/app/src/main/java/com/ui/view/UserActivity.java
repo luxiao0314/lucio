@@ -1,4 +1,4 @@
-package com.ui.user;
+package com.ui.view;
 
 import android.content.Intent;
 import android.support.design.widget.FloatingActionButton;
@@ -12,6 +12,9 @@ import android.widget.ImageView;
 
 import com.C;
 import com.base.ex.ExBaseActivity;
+import com.ui.contract.UserContract;
+import com.ui.model.UserModel;
+import com.ui.presenter.UserPresenter;
 import com.util.ImageUtil;
 import com.util.SpUtil;
 import com.util.ToastUtil;

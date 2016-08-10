@@ -1,7 +1,8 @@
-package com.ui.article;
+package com.ui.model;
 
 
 import com.api.Api;
+import com.ui.contract.ArticleContract;
 import com.util.helper.RxSchedulers;
 import com.data.CreatedResult;
 import com.data.Pointer;
